@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>history 객체</title>
+    <script>
+        function show(){
+            var len = history.length;
+            console.log(len);
+        }
+    
+    
+    
+    
+    </script>
+</head>
+<body>
+    <h1>page 1</h1>
+    <button onclick="location.href='js20.html'">2page</button>
+    <button onclick="history.forward()">앞으로 가기</button>
+    <button onclick="history.go(1)">앞으로 가기</button>
+    <button onclick="show()">show history</button>
+</body>
+</html>

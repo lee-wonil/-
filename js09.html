@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js 함수</title>
+    <script>
+        function test(){
+            document.write("전역함수");
+        }
+        test();
+        
+        function outerFunc(){
+            function innerFunc(){
+                document.write("지역 함수<br/>");
+            }
+            innerFunc();
+        }
+        outerFunc();
+    
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

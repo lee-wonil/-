@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>객체 생성</title>
+    <script>
+        function InBody(name,age,mobile,height,weight){
+            this.name=name;
+            this.age=age;
+            this.mobile = mobile;
+            this.height = height;
+            this.weight = weight;
+            
+            this.getInfo = function(){
+                var str = "이름 : "+this.name+"<br/>";
+                str += "나이 : "+this.age+"<br/>";
+                str += "전화번호 : "+this.mobile+"<br/>";
+                str += "키 : "+this.height+"<br/>";
+                str += "몸무게 : "+this.weight+"<br/>";
+                return str;
+            }
+        }
+        var p = new InBody("피카츄",10,"010-1111-2222",170,50);
+        console.log(p);
+        document.write(p.getInfo());
+        var p2 = {name:"피카",getName:function(){
+            console.log(this.name);
+        }};
+        p2.getName();
+        p2.add = "test";
+        console.log(p2.add);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

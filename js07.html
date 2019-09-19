@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js 배열</title>
+    <script>
+        var arr1 = [1,"a",true];
+        arr1.push(100);
+        for(var i=0;i<arr1.length;i++){
+            console.log(arr1[i]);
+        }
+        var a=arr1.pop();
+        for(var i=0;i<arr1.length;i++){
+            console.log(arr1[i]);
+        }
+        console.log("a : ",a);
+        var b = arr1.shift();
+        console.log("b :",b);
+        for(var i=0;i<arr1.length;i++){
+            console.log(arr1[i]);
+        }
+        arr1.unshift("test");
+        for(var i=0;i<arr1.length;i++){
+            console.log(arr1[i]);
+        }
+        var result = arr1.join("-");
+        console.log(result);
+        
+        var arr2 = [100,200,300];
+        result = arr1.concat(arr2);
+        console.log(result);
+        
+        var arr3 = [10,20,30,40,50];
+        result=arr3.slice(1,3);
+        console.log(result);
+        
+        var arr4 = ["bb","BB","aa","AA",7,1,"하늘","가을"];
+        result =arr4.sort();
+        console.log(result);
+        
+        result=arr3.reverse();
+        console.log(result);
+        
+        arr3.splice(2,1,"abc","def");   // 시작인덱스, 자를 요소의 수, 삽할 데이터......
+        console.log(arr3);
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>location</title>
+    <script>
+        
+        var href = location.href;
+        console.log(href);
+        var hostName = location.hostname;
+        console.log(hostName);
+        var host = location.host;
+        console.log(host);
+        var proto = location.protocol
+        console.log(proto);
+        var search = location.search;
+        console.log(search);
+        
+        var i=0;
+        var si = setInterval(function(){
+            console.log(i++);
+        },1000);
+    
+    </script>
+</head>
+<body>
+    <button onclick="location.reload()">새로고침</button>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>내장 객체</title>
+    <script>
+    /*    var num = 2.6234;
+        var roundNum = Math.round(num);
+        document.write(roundNum,"<br/>");
+        
+        var maxNum = Math.max(10,5,8,2);
+        document.write(maxNum,"<br/>");
+        
+        var rand = Math.random();
+        document.write(parseInt(rand*10),"<br/>");
+        
+        
+        //String
+        
+        var str = "hello javascript";
+        document.write(str.match("z"),"<br/>");
+        document.write(str.search("z"),"<br/>");
+        var s = str.split(" ");
+        document.write(s[0],"<br/>");
+        document.write(s[1],"<br/>");
+        document.write(str.slice(2,3));
+    */
+        var userEmail = prompt("이메일 주소 입력하세요");
+        var arrUrl = [".co.kr",".com",".net","or.kr",".go.kr"];
+        var check1 = false;
+        var check2 = false;
+        if(userEmail.indexOf("@")>0) check1 = true;
+        
+        for(var i =0;i<arrUrl.length;i++){
+            if(userEmail.indexOf(arrUrl[i])>0) check2 =true;
+        }
+        if(check1&&check2){
+            document.write(userEmail);
+        }
+        else{
+            alert("이메일 형식이 잘못되었습니다.");
+        }
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <script>
+        //유효성검사
+        function check(){
+            var userInput = eval("document.inputForm");
+            if(!userInput.id.value){
+                alert("아이디를 입력하세요.");
+                return false;
+            }
+            if(!userInput.pw.value){
+                alert("비밀번호를 입력하세요");
+                return false;
+            }
+            if(!userInput.name.value){
+                alert("이름을 입력하세요");
+                return false;
+            }
+            if(!userInput.email.value){
+                alert("이메일 주소를 입력하세요");
+                return false;
+            }
+        }
+        
+    </script>
+</head>
+<body>
+   <form action="pro.html" name="inputForm" onsubmit="return check()">
+        id : <input type="text" name="id"/> <br/>
+        pw : <input type="password" name="pw"/> <br/>
+        name : <input type="text" name="name"/> <br/>
+        email : <input type="text" name="email"/> <br/>
+        <input type="submit"value="전송"/>
+    </form>
+</body>
+</html>

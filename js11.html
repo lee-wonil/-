@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js함수</title>
+    <script>
+        function hello(){
+            document.write("hello <br />")
+        }
+        function test(){
+            document.write("test <br />")
+        }
+        function execute(func){
+            func();
+        }
+        
+        //execute(hello);
+        //execute(test);
+    /////////////////////////////////////////////
+        function createHello(){
+            function hello(user){
+                document.write(user+"님 방문을 환영합니다.")
+            }
+            return hello;
+        }
+        var result= createHello();
+        result("홍길동");
+    
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

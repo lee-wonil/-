@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js 함수</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        var hello = function(name){
+            document.write(name,"님 환영합니다.")
+        }
+        hello("test"); 
+        $(document).ready(function(){
+           $(".btn").click(function(){
+              alert("안녕하세요"); 
+           }); 
+        });
+    </script>
+</head>
+<body>
+    <button class="btn">출</button>
+</body>
+</html>
